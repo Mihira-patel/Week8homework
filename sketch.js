@@ -2,7 +2,6 @@ var net;
 var video;
 var currentResult;
 var img;
-var score = 0;
 let xPos;
 let yPos;
 
