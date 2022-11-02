@@ -33,7 +33,7 @@ function draw() {
     if (nose.x < width / 2) fill(50, 55, 100);
     else fill("magenta");
 
-    // use ears position to detect head tilt
+  
     if (leftEar.y > rightEar.y) {
       text("Party mode", 5, 25);
       rect(random(width), random(height), 100, 50);
@@ -48,7 +48,7 @@ function pickRandom() {
   x = random(20, width - 20);
 }
 
-// The new callback
+
 function videoLoadedCallback() {
   print("Video Loaded");
   posenet.load().then(loadedCallback);
